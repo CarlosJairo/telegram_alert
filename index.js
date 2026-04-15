@@ -28,13 +28,14 @@ async function runWatchCycle() {
   }
 }
 
-const startApp = async () => {
-  const MINUTES = 5;
-  while (true) {
-    await runWatchCycle();
-    console.log(`⏳ Waiting ${MINUTES} min...`);
-    await new Promise((resolve) => setTimeout(resolve, MINUTES * 60 * 1000));
-  }
-};
+// const startApp = async () => {
+//   const MINUTES = 5;
+//   while (true) {
+//     await runWatchCycle();
+//     console.log(`⏳ Waiting ${MINUTES} min...`);
+//     await new Promise((resolve) => setTimeout(resolve, MINUTES * 60 * 1000));
+//   }
+// };
 
-startApp();
+// startApp();
+runWatchCycle();
